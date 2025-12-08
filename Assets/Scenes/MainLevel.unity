@@ -148,8 +148,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54b42a0c64a0d9448ced94ba05496f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 622595277199233432, guid: 82c3c69a7a70aab40b05b19095faa58c, type: 3}
+  obstaclePrefabs:
+  - {fileID: 5569790009702213885, guid: 92c612469b866114bbdb4e66f24eaca6, type: 3}
+  - {fileID: 622595277199233432, guid: 82c3c69a7a70aab40b05b19095faa58c, type: 3}
+  - {fileID: 7238491461563350595, guid: d6cb1bd4446f6244eb29794c551a4d01, type: 3}
+  - {fileID: 8943688786139764342, guid: 08c4639fcea071149897594cf4d27dbe, type: 3}
   obstacleSpawnTime: 3
+  obstacleParent: {fileID: 656553080}
+  spawnWidth: 4
 --- !u!4 &556322949
 Transform:
   m_ObjectHideFlags: 0
@@ -159,7 +165,7 @@ Transform:
   m_GameObject: {fileID: 556322947}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 40}
+  m_LocalPosition: {x: 0, y: 5, z: 40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
