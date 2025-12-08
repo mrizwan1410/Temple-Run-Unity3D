@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.13
       objectReference: {fileID: 0}
+    - target: {fileID: 7371567456389674924, guid: 3c61e38b92c07cf4f9620c54dc7c1165, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: dd8cf5b1cda59a140a4b360d1c7d766f, type: 2}
     - target: {fileID: 8960291259461086491, guid: 3c61e38b92c07cf4f9620c54dc7c1165, type: 3}
       propertyPath: m_Name
       value: Cart
@@ -158,6 +162,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8960291259461086491, guid: 3c61e38b92c07cf4f9620c54dc7c1165, type: 3}
       insertIndex: 2
       addedObject: {fileID: 1917587978589079903}
+    - targetCorrespondingSourceObject: {fileID: 8960291259461086491, guid: 3c61e38b92c07cf4f9620c54dc7c1165, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6540825803329345190}
   m_SourcePrefab: {fileID: 100100000, guid: 3c61e38b92c07cf4f9620c54dc7c1165, type: 3}
 --- !u!1 &622595277199233432 stripped
 GameObject:
@@ -166,6 +173,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &1917587978589079903
 BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622595277199233432}
+  m_Material: {fileID: 13400000, guid: dd8cf5b1cda59a140a4b360d1c7d766f, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.33, y: 0.31, z: 2.86}
+  m_Center: {x: 0, y: 1.09, z: 0.87}
+--- !u!136 &6540825803329345190
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -182,9 +210,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.33, y: 0.31, z: 2.86}
-  m_Center: {x: 0, y: 1.09, z: 0.87}
+  serializedVersion: 2
+  m_Radius: 1.28
+  m_Height: 2.71
+  m_Direction: 1
+  m_Center: {x: 0.03, y: 1.25, z: 0.06}
 --- !u!4 &5677476625442848310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4193076238172439221, guid: 3c61e38b92c07cf4f9620c54dc7c1165, type: 3}
