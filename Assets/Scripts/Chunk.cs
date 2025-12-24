@@ -4,10 +4,13 @@ using UnityEngine;
 public class Chunk : MonoBehaviour
 {
     [SerializeField] GameObject fencePrefab;
-    [SerializeField] GameObject applePrefab;
-    [SerializeField] float[] lanes = { -2.5f, 0f, 2.5f };
+    [SerializeField] GameObject applePrefab; 
+    [SerializeField] GameObject coinPrefab;
 
     [SerializeField] float appleSpawnChance = .3f;
+    [SerializeField] float coinSpawnChance = .5f;
+
+    [SerializeField] float[] lanes = { -2.5f, 0f, 2.5f };
 
     List<int> availableLanes = new List<int> { 0, 1, 2 };
 
@@ -15,6 +18,7 @@ public class Chunk : MonoBehaviour
     {
         SpawnFences();
         SpawnApple();
+        SpawnCoin();
     }
 
     void SpawnFences()
@@ -38,6 +42,15 @@ public class Chunk : MonoBehaviour
         int selectedLane = SelectLane();
         Vector3 spawnPosition = new Vector3(lanes[selectedLane], transform.position.y, transform.position.z);
         Instantiate(applePrefab, spawnPosition, Quaternion.identity, this.transform);
+    }
+
+    void SpawnCoin()
+    {
+        if (availableLanes.Count <= 0 || Random.value > coinSpawnChance) return;
+
+        int selectedLane = SelectLane();
+        Vector3 spawnPosition = new Vector3(lanes[selectedLane], transform.position.y, transform.position.z);
+        Instantiate(coinPrefab, spawnPosition, Quaternion.identity, this.transform);
     }
 
     int SelectLane()
