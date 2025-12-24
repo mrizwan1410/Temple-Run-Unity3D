@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fencePrefab: {fileID: 3928739563234294504, guid: 4ed2870bc7ba3d54da6ff1233ad18cda, type: 3}
+  applePrefab: {fileID: 198855928637777803, guid: 20b1931eb05fe27408be6c5576bc998a, type: 3}
   lanes:
   - -2.5
   - 0
