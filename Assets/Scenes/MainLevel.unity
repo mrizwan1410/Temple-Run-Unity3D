@@ -615,6 +615,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ace129d48de2645a10b7950c302b7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 2109951766}
+--- !u!95 &2109951766 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8084148725885666118, guid: d9b700c983549e4458f9f1b8aac0967e, type: 3}
+  m_PrefabInstance: {fileID: 6515767324684794841}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6515767324684794841
 PrefabInstance:
   m_ObjectHideFlags: 0
