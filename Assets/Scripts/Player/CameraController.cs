@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] float minFOV = 20f;
-    [SerializeField] float maxFOV = 120f;
+    [SerializeField] float minFOV = 40f;
+    [SerializeField] float maxFOV = 85f;
     [SerializeField] float zoomDuration = 1f;
     [SerializeField] float zoomSpeedModifier = 5f;
 
@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour
 
     public void ChangeCameraFOV(float speedAmount)
     {
+        StopAllCoroutines();
         StartCoroutine(ChangeFOVRoutine(speedAmount));
     }
 
