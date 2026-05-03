@@ -14,6 +14,7 @@ public class Chunk : MonoBehaviour
     [SerializeField] float[] lanes = { -2.5f, 0f, 2.5f };
 
     LevelGenerator levelGenerator;
+    ScoreManager scoreManager;
 
     List<int> availableLanes = new List<int> { 0, 1, 2 };
 
@@ -24,9 +25,10 @@ public class Chunk : MonoBehaviour
         SpawnCoin();
     }
 
-    public void Init(LevelGenerator levelGenerator)
+    public void Init(LevelGenerator levelGenerator, ScoreManager scoreManager)
     {
         this.levelGenerator = levelGenerator;
+        this.scoreManager = scoreManager;
     }
 
     void SpawnFences()
@@ -68,7 +70,8 @@ public class Chunk : MonoBehaviour
         {
             float spawnPositionZ = topOfChunkZPos - (i * coinSeperationLength);
             Vector3 spawnPosition = new Vector3(lanes[selectedLane], transform.position.y, spawnPositionZ);
-            Instantiate(coinPrefab, spawnPosition, Quaternion.identity, this.transform);
+            Coin newCoin = Instantiate(coinPrefab, spawnPosition, Quaternion.identity, this.transform).GetComponent<Coin>();
+            newCoin.Init(scoreManager);
         }
     }
 

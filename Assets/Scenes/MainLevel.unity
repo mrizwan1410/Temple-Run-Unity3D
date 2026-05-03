@@ -373,7 +373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: -0.00012207031, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &588188356
@@ -5541,6 +5541,7 @@ MonoBehaviour:
   cameraController: {fileID: 2091025521}
   chunkPrefab: {fileID: 991869029649417223, guid: 92abdbf35eb9062429b5a1783efdc5e6, type: 3}
   chunkParent: {fileID: 656553080}
+  scoreManager: {fileID: 2057044827}
   startingChunksAmount: 12
   chunkLength: 10
   moveSpeed: 8
