@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] TMP_Text timeText;
+    [SerializeField] GameObject gameOverText;
     [SerializeField] float startTime = 5f;
 
     float timeLeft;
@@ -17,5 +18,16 @@ public class GameManager : MonoBehaviour
     {
         timeLeft -= Time.deltaTime;
         timeText.text = timeLeft.ToString("F1");
+
+        if (timeLeft<=0f)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        gameOverText.SetActive(true);
+        Time.timeScale = .1f;
     }
 }
