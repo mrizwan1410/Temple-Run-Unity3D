@@ -5866,6 +5866,17 @@ MonoBehaviour:
   animator: {fileID: 2109951766}
   collisionCoolDown: 1
   adjustChangeMoveSpeedAmount: -2
+--- !u!114 &1721825251 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5906187404854291233, guid: d9b700c983549e4458f9f1b8aac0967e, type: 3}
+  m_PrefabInstance: {fileID: 6515767324684794841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721825242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090ab78c0a3494142aaff87273877863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1767005318
 GameObject:
   m_ObjectHideFlags: 0
@@ -6172,6 +6183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88435a5c7c56a1a4ca1294c189e6406e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1721825251}
   timeText: {fileID: 545943002}
   gameOverText: {fileID: 1971885024}
   startTime: 5
