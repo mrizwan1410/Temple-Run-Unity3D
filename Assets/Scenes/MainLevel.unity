@@ -5684,9 +5684,11 @@ MonoBehaviour:
   - {fileID: 7636537973482412047, guid: 14d03416afae66b43b49b6ebd843fade, type: 3}
   - {fileID: 991869029649417223, guid: 92abdbf35eb9062429b5a1783efdc5e6, type: 3}
   - {fileID: 7636537973482412047, guid: 39b326f143da1e24aa1313061e490dc8, type: 3}
+  checkpointChunkPrefab: {fileID: 7636537973482412047, guid: e7a38f0bb9530664bb85652cb0e227fd, type: 3}
   chunkParent: {fileID: 656553080}
   scoreManager: {fileID: 2057044827}
   startingChunksAmount: 12
+  checkpointChunkInterval: 8
   chunkLength: 10
   moveSpeed: 8
   minMoveSpeed: 2
@@ -6193,7 +6195,7 @@ MonoBehaviour:
   playerController: {fileID: 1721825251}
   timeText: {fileID: 545943002}
   gameOverText: {fileID: 1971885024}
-  startTime: 5
+  startTime: 15
 --- !u!1 &2091025518
 GameObject:
   m_ObjectHideFlags: 0
